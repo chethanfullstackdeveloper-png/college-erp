@@ -1,0 +1,21 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="50" cy="50" r="48" fill="#e8f0fe" stroke="#1f7fdc" stroke-width="2"/>
+  
+  <!-- Staff/People -->
+  <!-- Person 1 -->
+  <circle cx="35" cy="25" r="8" fill="#1f7fdc"/>
+  <path d="M 35 33 Q 25 35 25 45 L 25 65 L 45 65 L 45 45 Q 45 35 35 33" fill="#1f7fdc" stroke="#1f7fdc" stroke-width="1.5"/>
+  
+  <!-- Person 2 -->
+  <circle cx="50" cy="20" r="8" fill="#1f7fdc"/>
+  <path d="M 50 28 Q 40 30 40 40 L 40 65 L 60 65 L 60 40 Q 60 30 50 28" fill="#1f7fdc" stroke="#1f7fdc" stroke-width="1.5"/>
+  
+  <!-- Person 3 -->
+  <circle cx="65" cy="25" r="8" fill="#1f7fdc"/>
+  <path d="M 65 33 Q 55 35 55 45 L 55 65 L 75 65 L 75 45 Q 75 35 65 33" fill="#1f7fdc" stroke="#1f7fdc" stroke-width="1.5"/>
+  
+  <!-- Badge/Check -->
+  <circle cx="75" cy="75" r="15" fill="#4caf50" stroke="white" stroke-width="2"/>
+  <path d="M 70 75 L 73 78 L 80 71" stroke="white" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

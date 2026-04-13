@@ -1,0 +1,241 @@
+/* ── HERO ── */
+.hero {
+  position: relative;
+  height: 200px;
+  background: linear-gradient(135deg, var(--primary-green) 0%, #003d1a 100%);
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+}
+
+.heroBg {
+  position: absolute;
+  inset: 0;
+  background-image: url("/college.jpeg");
+  background-size: cover;
+  background-position: center;
+  opacity: 0.25;
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 40, 15, 0.9) 0%,
+    rgba(0, 0, 0, 0.1) 60%
+  );
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  padding: 0 20px 18px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.collegeLogo {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 3px solid var(--primary-green);
+  overflow: hidden;
+}
+
+.collegeLogo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.heroText {
+  flex: 1;
+  padding-left: 12px;
+}
+
+.heroText h1 {
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+}
+
+.heroText p {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.65);
+}
+
+.heroBadge {
+  background: var(--accent-gold);
+  color: #3a2800;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 5px 12px;
+  border-radius: 20px;
+}
+
+/* ── NAV ── */
+.nav {
+  background: var(--primary-green);
+  display: flex;
+  gap: 2px;
+  padding: 0 16px;
+  border-bottom: 2px solid var(--accent-gold);
+  overflow-x: auto;
+}
+
+.nav::-webkit-scrollbar {
+  display: none;
+}
+
+.navItem {
+  padding: 11px 16px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.65);
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.navItem.active {
+  color: var(--accent-gold);
+  border-bottom: 2px solid var(--accent-gold);
+  font-weight: 600;
+}
+
+/* ── BODY ── */
+.body {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* ── WELCOME CARD ── */
+.welcomeCard {
+  background: white;
+  border-radius: 10px;
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-left: 4px solid var(--accent-gold);
+}
+
+.avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: var(--primary-green);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoutBtn {
+  margin-left: auto;
+  border: 1px solid #ddd;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* ── STAT GRID ── */
+.statGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.statCard {
+  background: white;
+  padding: 14px;
+  border-radius: 10px;
+  text-align: center;
+  border-top: 3px solid;
+}
+
+.statCard.green { border-color: var(--primary-green); }
+.statCard.gold { border-color: var(--accent-gold); }
+.statCard.red { border-color: var(--brick-red); }
+
+.statVal {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.statLbl {
+  font-size: 11px;
+  color: #888;
+}
+
+/* ── SECTION ── */
+.sectionCard {
+  background: white;
+  border-radius: 10px;
+  padding: 14px;
+}
+
+.secHead {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--primary-green);
+  border-bottom: 1px solid #eee;
+  margin-bottom: 10px;
+}
+
+/* ── COURSE ── */
+.courseRow {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+}
+
+/* ── GRID ── */
+.twoCol {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+/* ── QUICK ── */
+.quickGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.quickItem {
+  background: #eee;
+  padding: 12px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+/* ── FOOTER ── */
+.footer {
+  text-align: center;
+  font-size: 11px;
+  color: #aaa;
+  padding: 16px;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 600px) {
+  .statGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .twoCol {
+    grid-template-columns: 1fr;
+  }
+}

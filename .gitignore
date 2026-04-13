@@ -1,0 +1,29 @@
+# Node
+node_modules/
+
+# VS Code
+.vscode/
+
+# Environment
+.env
+.env.local
+.env.*
+
+# Logs
+*.log
+
+# Next.js
+.next/
+out/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# TypeScript
+dist/
+build/
+
+# Backend
+backend-debug.log
+server.log

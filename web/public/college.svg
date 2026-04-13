@@ -1,0 +1,77 @@
+<svg viewBox="0 0 1200 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Sky gradient background -->
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="1200" height="400" fill="url(#skyGradient)"/>
+  
+  <!-- Sun -->
+  <circle cx="1050" cy="80" r="50" fill="#ffd700" opacity="0.8"/>
+  
+  <!-- Ground -->
+  <rect y="300" width="1200" height="100" fill="#2d5016"/>
+  
+  <!-- Main College Building -->
+  <g>
+    <!-- Base building -->
+    <rect x="300" y="150" width="300" height="200" fill="#d4a574" stroke="#8B7355" stroke-width="2"/>
+    
+    <!-- Roof -->
+    <polygon points="300,150 450,80 600,150" fill="#8B4513" stroke="#654321" stroke-width="2"/>
+    
+    <!-- Roof decoration -->
+    <circle cx="450" cy="70" r="8" fill="#ffd700"/>
+    
+    <!-- Central entrance -->
+    <rect x="425" y="250" width="50" height="100" fill="#4a4a4a"/>
+    <rect x="435" y="260" width="10" height="20" fill="#1a1a1a"/>
+    <rect x="455" y="260" width="10" height="20" fill="#1a1a1a"/>
+    <polygon points="440,255 450,245 460,255" fill="#ffd700"/>
+    
+    <!-- Main floor windows (3x3 grid) -->
+    <rect x="330" y="170" width="35" height="35" fill="#87CEEB" stroke="#333" stroke-width="1"/>
+    <rect x="377" y="170" width="35" height="35" fill="#87CEEB" stroke="#333" stroke-width="1"/>
+    <rect x="425" y="170" width="35" height="35" fill="#87CEEB" stroke="#333" stroke-width="1"/>
+    
+    <rect x="330" y="220" width="35" height="35" fill="#87CEEB" stroke="#333" stroke-width="1"/>
+    <rect x="377" y="220" width="35" height="35" fill="#87CEEB" stroke="#333" stroke-width="1"/>
+    <rect x="425" y="220" width="35" height="35" fill="#87CEEB" stroke="#333" stroke-width="1"/>
+    
+    <!-- Left wing -->
+    <rect x="150" y="200" width="140" height="150" fill="#c4956f" stroke="#8B7355" stroke-width="2"/>
+    <polygon points="150,200 220,120 290,200" fill="#8B4513" stroke="#654321" stroke-width="2"/>
+    
+    <!-- Left wing windows -->
+    <rect x="170" y="230" width="25" height="25" fill="#87CEEB" stroke="#333" stroke-width="1"/>
+    <rect x="210" y="230" width="25" height="25" fill="#87CEEB" stroke="#333" stroke-width="1"/>
+    <rect x="250" y="230" width="25" height="25" fill="#87CEEB" stroke="#333" stroke-width="1"/>
+    
+    // Right wing
+    <rect x="610" y="200" width="140" height="150" fill="#c4956f" stroke="#8B7355" stroke-width="2"/>
+    <polygon points="610,200 680,120 750,200" fill="#8B4513" stroke="#654321" stroke-width="2"/>
+    
+    <!-- Right wing windows -->
+    <rect x="630" y="230" width="25" height="25" fill="#87CEEB" stroke="#333" stroke-width="1"/>
+    <rect x="670" y="230" width="25" height="25" fill="#87CEEB" stroke="#333" stroke-width="1"/>
+    <rect x="710" y="230" width="25" height="25" fill="#87CEEB" stroke="#333" stroke-width="1"/>
+  </g>
+  
+  <!-- Trees -->
+  <g>
+    <rect x="120" y="260" width="15" height="40" fill="#8B4513"/>
+    <circle cx="127.5" cy="240" r="35" fill="#228B22"/>
+    
+    <rect x="900" y="260" width="15" height="40" fill="#8B4513"/>
+    <circle cx="907.5" cy="240" r="35" fill="#228B22"/>
+  </g>
+  
+  <!-- Clouds -->
+  <ellipse cx="200" cy="100" rx="60" ry="30" fill="white" opacity="0.7"/>
+  <ellipse cx="250" cy="120" rx="50" ry="25" fill="white" opacity="0.7"/>
+  <ellipse cx="1000" cy="150" rx="70" ry="35" fill="white" opacity="0.6"/>
+  <ellipse cx="1070" cy="170" rx="55" ry="28" fill="white" opacity="0.6"/>
+</svg>

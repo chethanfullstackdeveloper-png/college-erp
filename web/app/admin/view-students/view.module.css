@@ -1,0 +1,335 @@
+.container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 100%;
+  max-width: 1400px;
+  margin-top: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #667eea;
+  padding-bottom: 15px;
+}
+
+.header h1 {
+  margin: 0;
+  color: #333;
+  font-size: 28px;
+}
+
+.logoutBtn {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.logoutBtn:hover {
+  background: #c0392b;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filterSection {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.filterGroup {
+  margin-bottom: 20px;
+}
+
+.filterGroup:last-of-type {
+  margin-bottom: 15px;
+}
+
+.filterGroup h3 {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.filterBtn {
+  padding: 8px 16px;
+  border: 2px solid #ddd;
+  background: white;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  color: #555;
+  transition: all 0.3s;
+}
+
+.filterBtn:hover {
+  border-color: #667eea;
+  color: #667eea;
+}
+
+.filterBtn.active {
+  background: #667eea;
+  color: white;
+  border-color: #667eea;
+}
+
+.clearFiltersBtn {
+  padding: 10px 20px;
+  background: #95a5a6;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.clearFiltersBtn:hover {
+  background: #7f8c8d;
+}
+
+
+.backBtn,
+.addBtn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s;
+  font-weight: 500;
+}
+
+.backBtn {
+  background: #95a5a6;
+  color: white;
+}
+
+.backBtn:hover {
+  background: #7f8c8d;
+}
+
+.addBtn {
+  background: #27ae60;
+  color: white;
+  margin-left: auto;
+}
+
+.addBtn:hover {
+  background: #229954;
+}
+
+.error {
+  background: #ffe0e0;
+  color: #c0392b;
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  border-left: 4px solid #c0392b;
+}
+
+.empty {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+}
+
+.empty p {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.empty a {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.empty a:hover {
+  text-decoration: underline;
+}
+
+.tableWrapper {
+  overflow-x: auto;
+  margin-bottom: 20px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.table thead {
+  background: #f8f9fa;
+  border-bottom: 2px solid #ddd;
+}
+
+.table thead th {
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+}
+
+.table tbody tr {
+  border-bottom: 1px solid #ddd;
+  transition: background 0.2s;
+}
+
+.table tbody tr:hover {
+  background: #f8f9fa;
+}
+
+.table tbody td {
+  padding: 12px;
+  color: #555;
+}
+
+.rollCol {
+  font-weight: 600;
+  color: #667eea;
+  width: 80px;
+}
+
+.yearCol {
+  font-weight: 500;
+  color: #27ae60;
+  width: 70px;
+}
+
+.streamCol {
+  color: #2980b9;
+  width: 90px;
+}
+
+.branchCol {
+  color: #8e44ad;
+  width: 80px;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  width: 200px;
+}
+
+.editBtn,
+.deleteBtn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+  transition: all 0.3s;
+  flex: 1;
+}
+
+.editBtn {
+  background: #3498db;
+  color: white;
+}
+
+.editBtn:hover {
+  background: #2980b9;
+}
+
+.deleteBtn {
+  background: #e74c3c;
+  color: white;
+}
+
+.deleteBtn:hover:not(:disabled) {
+  background: #c0392b;
+}
+
+.deleteBtn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.footer {
+  text-align: right;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+  color: #666;
+  font-size: 14px;
+}
+
+.footer strong {
+  color: #667eea;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .controls {
+    flex-direction: column;
+  }
+
+  .addBtn {
+    margin-left: 0;
+  }
+
+  .table {
+    font-size: 12px;
+  }
+
+  .table thead th,
+  .table tbody td {
+    padding: 8px;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+
+  .editBtn,
+  .deleteBtn {
+    width: 100%;
+  }
+}
