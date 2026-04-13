@@ -1,31 +1,34 @@
 import express from "express";
 import cors from "cors";
-import fs from "fs";
 import { pool } from "./db";
 import studentRoutes from "./routes/student";
 import staffRoutes from "./routes/staff";
 import adminRoutes from "./routes/admin";
 
 const app = express();
-app.use(cors());
+
+// Middleware
 app.use(express.json());
+
+app.use(cors({
+  origin: "https://your-frontend.vercel.app",
+  credentials: true
+}));
+
+// Logging
 app.use((req, res, next) => {
-  const message = `${new Date().toISOString()} REQ ${req.method} ${req.url} content-type:${req.headers["content-type"]}\n`;
-  fs.appendFileSync("./backend-debug.log", message);
   console.log(
-    "received request:",
-    req.method,
-    req.url,
-    req.headers["content-type"],
+    `[${new Date().toISOString()}] ${req.method} ${req.url}`
   );
   next();
 });
 
+// Root
 app.get("/", (req, res) => {
   res.send("API Running 🚀");
 });
 
-// ✅ Test DB
+// Test DB
 app.get("/test-db", async (req, res) => {
   try {
     const result = await pool.query("SELECT NOW()");
@@ -35,11 +38,14 @@ app.get("/test-db", async (req, res) => {
   }
 });
 
+// Routes
 app.use("/students", studentRoutes);
 app.use("/staff", staffRoutes);
 app.use("/admin", adminRoutes);
 
+// Port (Render compatible)
 const PORT = process.env.PORT || 5000;
+
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
