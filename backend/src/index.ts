@@ -11,7 +11,7 @@ const app = express();
 app.use(express.json());
 
 app.use(cors({
-  origin: "https://your-frontend.vercel.app",
+  origin: "https://college-erp-phi.vercel.app",
   credentials: true
 }));
 
