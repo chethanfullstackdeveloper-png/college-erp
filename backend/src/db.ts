@@ -1,10 +1,6 @@
 ﻿import dotenv from "dotenv";
 import { Pool as PgPool } from "pg";
-import { Pool } from "pg";
-
-export const pool = new Pool({
-  connectionString: process.env.DATABASE_URL
-});
+import { newDb } from "pg-mem";
 
 dotenv.config();
 
